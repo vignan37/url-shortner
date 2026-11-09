@@ -1,4 +1,4 @@
-  services:
+services:
   web:
     build: ./app
     ports:
@@ -15,7 +15,6 @@
         condition: service_healthy
       redis:
         condition: service_healthy
-
 
   db:
     image: postgres:16-alpine
